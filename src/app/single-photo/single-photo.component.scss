@@ -1,0 +1,26 @@
+.photo-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.photo-wrapper img {
+    max-width: 100%; 
+    max-height: 90vh; 
+    width: auto; 
+    height: auto; 
+    object-fit: contain; 
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 12px;
+}
+
+.photo-wrapper button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 16px; /* Add spacing between image and button */
+}

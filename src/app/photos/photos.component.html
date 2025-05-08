@@ -1,0 +1,22 @@
+<div class="photo-grid">
+  <div class="photo" *ngFor="let photo of photos">
+    <img [src]="photo.url" alt="Random photo" (click)="addToFavorites(photo)" />
+  </div>
+</div>
+
+
+<div class="loader-container" *ngIf="isLoading">
+  <mat-spinner diameter="50"></mat-spinner>
+</div>
+
+
+<div *ngIf="message" class="custom-alert alert alert-success text-center" role="alert">
+  {{ message }}
+</div>
+
+
+<div
+  appInfiniteScroll
+  (scrolled)="onScrollTriggered()"
+  style="height: 50px"
+></div>

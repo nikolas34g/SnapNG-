@@ -1,0 +1,4 @@
+<div *ngIf="photoUrl" class="photo-wrapper">
+  <img [src]="photoUrl" alt="Single photo" />
+  <button (click)="removeFromFavorites()">Remove from Favorites</button>
+</div>
